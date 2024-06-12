@@ -203,6 +203,5 @@ La solicitud debe contener un objeto JSON con la siguiente estructura:</p>
 <p>El proyecto hace uso de variables de entorno, para lo cual, se debe especificar el siguiente contenido en el archivo <strong>.env</strong>:</p>
 
 <pre><code>
-    PORT=3000
     URL=String_de_tu_conexion_a_la_base_de_datos_mongoDB
 </code></pre>
