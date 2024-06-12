@@ -1,0 +1,20 @@
+{
+  "incidents": [
+    {
+      "id": "a8287992-e90d-42c9-b641-0b34b2f27dd1",
+      "type": "Asesinato",
+      "date": "28//05/2024",
+      "location": "Guayaquil - Ecuador",
+      "description": "Robo y asesinato a una mujer en el mercado artesanal.",
+      "state": "Completado"
+    },
+    {
+      "id": "8693c169-4720-4dfe-b555-ccedf54edd9d",
+      "type": "Asalto",
+      "date": "23//01/1994",
+      "location": "Cuenca - Ecuador",
+      "description": "Asalto a mano armada",
+      "state": "En proceso"
+    }
+  ]
+}
