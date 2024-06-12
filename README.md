@@ -112,7 +112,7 @@ La respuesta será un objeto JSON con la siguiente estructura:</p>
 <p>Obtendremos los incidentes con el tipo = "Asesinato"</p>
 
 <pre><code>
-    api/v1/incidents/?clasific="Asesinato"
+    api/v1/incidents/?clasific=Asesinato
 </code></pre>
 
 <pre><code>
@@ -128,7 +128,7 @@ La respuesta será un objeto JSON con la siguiente estructura:</p>
     ]
 </code></pre>
 
-<p>ENDPOINT: <a href="https://apincidents.onrender.com/api/v1/incidents/?clasific={Asalto}">https://apincidents.onrender.com/api/v1/incidents/?clasific={query}</a></p>
+<p>ENDPOINT: <a href="https://apincidents.onrender.com/api/v1/incidents/?clasific=Asalto">https://apincidents.onrender.com/api/v1/incidents/?clasific={query}</a></p>
 
 
 <ul><li><p>CREAR UN INCIDENTE</p></li></ul>
