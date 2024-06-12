@@ -62,7 +62,7 @@
     []
 </code></pre>
 
-<p>ENDPOINT: <a>https://apincidents.onrender.com/api/v1/incidents/</a></p>
+<p>ENDPOINT: <a href="https://apincidents.onrender.com/api/v1/incidents/">https://apincidents.onrender.com/api/v1/incidents/</a></p>
 
 
 <ul><li><p>OBTENER UN SOLO INCIDENTE</p></li></ul>
@@ -89,7 +89,7 @@
     }
 </code></pre>
 
-<p>ENDPOINT: <a>https://apincidents.onrender.com/api/v1/incidents/{id}</a></p>
+<p>ENDPOINT: <a href="https://apincidents.onrender.com/api/v1/incidents/{id}">https://apincidents.onrender.com/api/v1/incidents/{id}</a></p>
 
 <ul><li><p>OBTENER INCIDENTES POS SU TIPO</p></li></ul>
 
@@ -128,7 +128,7 @@ La respuesta será un objeto JSON con la siguiente estructura:</p>
     ]
 </code></pre>
 
-<p>ENDPOINT: <a>https://apincidents.onrender.com/api/v1/incidents/?clasific={query}</a></p>
+<p>ENDPOINT: <a href="https://apincidents.onrender.com/api/v1/incidents/?clasific={Asalto}">https://apincidents.onrender.com/api/v1/incidents/?clasific={query}</a></p>
 
 
 <ul><li><p>CREAR UN INCIDENTE</p></li></ul>
@@ -149,7 +149,7 @@ La respuesta será un objeto JSON con la siguiente estructura:</p>
     }
 </code></pre>
 
-<p>ENDPOINT: <a>https://apincidents.onrender.com/api/v1/incidents/</a></p>
+<p>ENDPOINT: <a href="https://apincidents.onrender.com/api/v1/incidents/">https://apincidents.onrender.com/api/v1/incidents/</a></p>
 
 
 <ul><li><p>MODIFICAR UN INCIDENTE</p></li></ul>
@@ -171,7 +171,7 @@ La solicitud debe contener un objeto JSON con la siguiente estructura:</p>
     }
 </code></pre>
 
-<p>ENDPOINT: <a>https://apincidents.onrender.com/api/v1/incidents/{id}</a></p>
+<p>ENDPOINT: <a href= "https://apincidents.onrender.com/api/v1/incidents/1">https://apincidents.onrender.com/api/v1/incidents/{id}</a></p>
 
 
 <ul><li><p>ELIMINAR UN INCIDENTE</p></li></ul>
@@ -182,7 +182,7 @@ La solicitud debe contener un objeto JSON con la siguiente estructura:</p>
 
 <p>Donde <code>:id</code> es el identificador del incidente que se desea eliminar.</p>
 
-<p>ENDPOINT: <a>https://apincidents.onrender.com/api/v1/incidents/{id}</a></p>
+<p>ENDPOINT: <a href="https://apincidents.onrender.com/api/v1/incidents/1">https://apincidents.onrender.com/api/v1/incidents/{id}</a></p>
 
 
 <ul><li><h2>Uso local</h2></li></ul>
