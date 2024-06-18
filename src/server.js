@@ -1,4 +1,6 @@
 import express from 'express'
+import cors from 'cors'
+import morgan from 'morgan'
 
 //Rutas
 import incidentRoutes from './routers/delinquency_routes.js'
@@ -6,13 +8,15 @@ import incidentRoutes from './routers/delinquency_routes.js'
 import userRoutes from './routers/user_routes.js'
 
 //Inicializacion
-const app = express()
+const app = express();
 
 //Variable
 app.set('port',process.env.port || 3000);
 
 //Middlewares
 app.use(express.json());
+app.use(cors());
+app.use(morgan('dev'));
 
 //Ruta principal
 app.get('/',(req,res)=>{
