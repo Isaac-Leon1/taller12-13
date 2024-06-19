@@ -39,10 +39,11 @@ const loginUser = async(req, res)=> {
             return
         }
         const passwordMatch = await bcrypt.compare(password, finduser.password)
+        console.log(passwordMatch)
         if (finduser && passwordMatch) {
-            const token = createToken(user)
-            delete user.password
-            res.status(200).json({user,token})
+            const token = createToken(finduser)
+            delete finduser.password
+            res.status(200).json({finduser,token})
         } else {
             // Si la contraseña es incorrecta
             res.status(404).json({msg: "Contraseña incorrecta!"})
