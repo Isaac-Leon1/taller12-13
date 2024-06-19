@@ -24,23 +24,32 @@ const registerUser = async(req, res)=> {
 }
 
 const loginUser = async(req, res)=> {
-    const {username, password}=req.body
+    const {email, password}=req.body
     try {
-        const users = await userModel.find();
-        const user = users.find(user => user.username === username)
-        if (!user) {
-            return { error: "Username o password invalido" }
+        if (!email || !password) {
+            // Si no se envian los datos
+            res.status(400).json({msg: "Faltan datos!"})
+            return
         }
-        const passwordMatch = await bcrypt.compare(password, user.password)
-        if (user && passwordMatch) {
+        const finduser = await userModel.findOne({email});
+        console.log(finduser);
+        if (!finduser) {
+            // Si no existe el usuario
+            res.status(404).json({msg: "No existe el usuario!"})
+            return
+        }
+        const passwordMatch = await bcrypt.compare(password, finduser.password)
+        if (finduser && passwordMatch) {
             const token = createToken(user)
             delete user.password
             res.status(200).json({user,token})
         } else {
-            return {error:"Username o password invalido"}
+            // Si la contraseña es incorrecta
+            res.status(404).json({msg: "Contraseña incorrecta!"})
         }
     } catch (error) {
-        res.status(500).json(error.message)
+        // Capturar cualquier excepcion y enviarla al cliente
+        res.status(500).json({msg: error.message})
     }
 }
 

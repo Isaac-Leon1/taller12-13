@@ -15,7 +15,11 @@ app.set('port',process.env.port || 3000);
 
 //Middlewares
 app.use(express.json());
-app.use(cors());
+const corsOptions = {
+    origin: 'http://localhost:5173', //URL de la app que consume el API
+    credentials: true, //Acceso a las cookies
+};
+app.use(cors(corsOptions));
 app.use(morgan('dev'));
 
 //Ruta principal
