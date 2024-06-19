@@ -26,6 +26,32 @@
 
 <p>La API Incidents nos permite obtener información acerca de los incidentes relacionados con la delincuencia en el Ecuador. Para ello, se debe realizar una petición HTTP GET a la siguiente URL:</p>
 
+<ul><li><h2>Autenticación</h2></li></ul>
+<p>El usuario puede registrarse o loguearse para hacer uso del CRUD de la API</p>
+<pre><code>POST api/v1/users/register</code></pre>
+<p>Teniendo en cuenta que en el body debe colocar los siguientes atributos:</p>
+
+<pre><code>
+        {
+        "username": "tu nombre de suario",
+        "password": "tu contrasena",
+        "address": "tu direccion",
+        "cellphone": "tu numero telefonico",
+        "edad": "tu edad",
+        "email": "tu correo electronico"
+        }
+</code></pre>
+
+<p>Login de usuario</p>
+<pre><code>POST api/v1/users/login</code></pre>
+<p>Teniendo en cuenta que en el body debe colocar los siguientes atributos:</p>
+
+<pre><code>
+        {
+        "password": "tu contrasena",
+        "email": "tu correo electronico"
+        }
+</code></pre>
 <ul><li><p>LISTAR TODOS LOS INCIDENTES</p></li></ul>
 
 <p>Para tener toda la información almacenada en la base de datos se utiliza una solicitud del tipo <code>GET</code> a la siguiente ruta:</p>
