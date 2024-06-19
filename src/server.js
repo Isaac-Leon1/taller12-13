@@ -1,5 +1,6 @@
 import express from 'express'
 import cors from 'cors'
+import morgan from 'morgan'
 
 //Rutas
 import incidentRoutes from './routers/delinquency_routes.js'

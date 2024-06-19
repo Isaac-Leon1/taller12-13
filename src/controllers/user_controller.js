@@ -39,6 +39,7 @@ const loginUser = async(req, res)=> {
             return
         }
         const passwordMatch = await bcrypt.compare(password, finduser.password)
+        console.log(passwordMatch)
         if (finduser && passwordMatch) {
             const token = createToken(finduser)
             delete finduser.password
