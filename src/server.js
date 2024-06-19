@@ -1,4 +1,5 @@
 import express from 'express'
+import cors from 'cors'
 
 //Rutas
 import incidentRoutes from './routers/delinquency_routes.js'
@@ -8,6 +9,7 @@ import userRoutes from './routers/user_routes.js'
 //Inicializacion
 const app = express()
 
+app.use(cors())
 //Variable
 app.set('port',process.env.port || 3000);
 
