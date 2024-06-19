@@ -20,7 +20,6 @@ const corsOptions = {
     credentials: true, //Acceso a las cookies
 };
 app.use(cors(corsOptions));
-app.use(morgan('dev'));
 
 //Ruta principal
 app.get('/',(req,res)=>{
