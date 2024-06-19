@@ -52,6 +52,8 @@
         "email": "tu correo electronico"
         }
 </code></pre>
+
+<p>El usuario debe copiar el token que se le envia, el cual va en la parte de seccion bearer token</p>
 <ul><li><p>LISTAR TODOS LOS INCIDENTES</p></li></ul>
 
 <p>Para tener toda la información almacenada en la base de datos se utiliza una solicitud del tipo <code>GET</code> a la siguiente ruta:</p>
