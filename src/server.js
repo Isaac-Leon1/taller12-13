@@ -16,7 +16,9 @@ app.set('port',process.env.port || 3000);
 app.use(express.json());
 const corsOptions = {
     origin: 'http://localhost:5173', //URL de la app que consume el API
-    credentials: true, //Acceso a las cookies
+    credentials: true,
+    methods: ['GET', 'PUT', 'POST'], //Acceso a las cookies
+    optionSuccessStatus:200
 };
 app.use(cors(corsOptions));
 
